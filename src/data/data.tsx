@@ -13,16 +13,13 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
+import porfolioImage4 from '../images/portfolio/collegeWeb.png';
+import porfolioImage3 from '../images/portfolio/netflixClone.png';
+import porfolioImage5 from '../images/portfolio/olx clone.png';
+//import  heroImage from '../images/backgroundimg.png';
+import porfolioImage2 from '../images/portfolio/placementPortalHome.png';
 //import heroImage from '../images/header-background.webp';
 import heroImage from '../images/shebin1mg2.jpg';
-//import  heroImage from '../images/backgroundimg.png';
-
-
-import porfolioImage2 from '../images/portfolio/placementPortalHome.png';
-import porfolioImage3 from '../images/portfolio/netflixClone.png';
-import porfolioImage4 from '../images/portfolio/collegeWeb.png';
-import porfolioImage5 from '../images/portfolio/olx clone.png';
-
 //import profilepic from '../images/profilepic.jpg';
 import profilepic from '../images/shebinimg1.jpg'
 import testimonialImage from '../images/testimonial.webp';

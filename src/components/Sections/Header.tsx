@@ -103,8 +103,8 @@ const MobileNav: FC<{navSections: SectionId[]; currentSection: SectionId | null}
                       current={section === currentSection}
                       inactiveClass={inactiveClass}
                       key={section}
-                      onClick={toggleOpen}
                       section={section}
+                      onClick={toggleOpen}
                     />
                   ))}
                 </nav>

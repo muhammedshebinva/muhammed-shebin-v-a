@@ -1,8 +1,10 @@
 import {DevicePhoneMobileIcon, EnvelopeIcon, MapPinIcon} from '@heroicons/react/24/outline';
 import classNames from 'classnames';
+import Image from 'next/image';
 import {FC, memo} from 'react';
 
-import Image from 'next/image';
+import profileImage from '/Users/shebinvs/Desktop/portfolio/react-resume-template/src/images/shebin1mg2.jpg'
+
 import {contact, SectionId} from '../../../data/data';
 import {ContactType, ContactValue} from '../../../data/dataDef';
 import FacebookIcon from '../../Icon/FacebookIcon';
@@ -11,9 +13,6 @@ import InstagramIcon from '../../Icon/InstagramIcon';
 import LinkedInIcon from '../../Icon/LinkedInIcon';
 import TwitterIcon from '../../Icon/TwitterIcon';
 import Section from '../../Layout/Section';
-//import ContactForm from './ContactForm';
-
-import profileImage from '/Users/shebinvs/Desktop/portfolio/react-resume-template/src/images/shebin1mg2.jpg'
 
 const ContactValueMap: Record<ContactType, ContactValue> = {
   [ContactType.Email]: {Icon: EnvelopeIcon, srLabel: 'Email'},

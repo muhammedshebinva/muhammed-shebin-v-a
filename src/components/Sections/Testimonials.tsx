@@ -82,8 +82,8 @@ const Testimonials: FC = memo(() => {
           <div className="flex flex-col items-center gap-y-6 rounded-xl bg-gray-800/60 p-6 shadow-lg">
             <div
               className="no-scrollbar flex w-full touch-pan-x snap-x snap-mandatory gap-x-6 overflow-x-auto scroll-smooth"
-              onScroll={handleScroll}
-              ref={scrollContainer}>
+              ref={scrollContainer}
+              onScroll={handleScroll}>
               {testimonials.map((testimonial, index) => {
                 const isActive = index === activeIndex;
                 return (
