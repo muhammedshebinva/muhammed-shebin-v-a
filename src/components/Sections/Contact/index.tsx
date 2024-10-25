@@ -3,8 +3,7 @@ import classNames from 'classnames';
 import Image from 'next/image';
 import {FC, memo} from 'react';
 
-import profileImage from '/Users/shebinvs/Desktop/portfolio/react-resume-template/src/images/shebin1mg2.jpg'
-
+import profileImage from '../../../../public/images/shebin1mg2.jpg'
 import {contact, SectionId} from '../../../data/data';
 import {ContactType, ContactValue} from '../../../data/dataDef';
 import FacebookIcon from '../../Icon/FacebookIcon';
