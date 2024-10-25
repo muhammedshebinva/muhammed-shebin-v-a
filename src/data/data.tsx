@@ -104,7 +104,7 @@ export const aboutData: About = {
     {label: 'Age', text: '23', Icon: CalendarIcon},
     {label: 'Nationality', text: 'Indian', Icon: FlagIcon},
     {label: 'Interests', text: 'Coding, Video editing, Photography', Icon: SparklesIcon},
-    {label: 'Study', text: 'Bharathiar University', Icon: AcademicCapIcon},
+    {label: 'Education', text: 'BSc Computer Science', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'Infosys Limited', Icon: BuildingOffice2Icon},
   ],
 };
@@ -193,12 +193,16 @@ export const skills: SkillGroup[] = [
         level: 10,
       },
       {
-        name: 'French',
-        level: 4,
+        name: 'hindi',
+        level: 8,
       },
       {
-        name: 'Spanish',
-        level: 3,
+        name: 'tamil',
+        level: 8,
+      },
+      {
+        name: 'malayalam',
+        level: 10,
       },
     ],
   },
@@ -414,7 +418,7 @@ export const education: TimelineItem[] = [
     date: '',
     location: 'Bharathiar University',
     title: 'BSc Computer Science (8.6 CGPA)',
-    content: <p>learned foundational concepts in programming, algorithms, data structures, and software development methodologies. Courses in operating systems, databases, and web development were particularly impactful, providing a solid technical base.
+    content: <p>Learned foundational concepts in programming, algorithms, data structures, and software development methodologies. Courses in operating systems, databases, and web development were particularly impactful, providing a solid technical base.
 I also gained experience with version control systems like Git, which has been essential in my current role as a software engineer. Learning about Agile methodologies helped me understand project management and iterative development processes.
     </p>,
   },
@@ -422,7 +426,7 @@ I also gained experience with version control systems like Git, which has been e
     date: '',
     location: 'Kerala',
     title: 'Higher Secondary (7.8 CGPA)',
-    content: <p>my time in school equipped me with critical thinking skills, a problem-solving mindset, and technical proficiency that I apply daily in my work. I'm continually building on this foundation</p>,
+    content: <p>My time in school equipped me with critical thinking skills, a problem-solving mindset, and technical proficiency that I apply daily in my work. I'm continually building on this foundation</p>,
   },
 ];
 
