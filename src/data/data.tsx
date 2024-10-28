@@ -86,7 +86,7 @@ export const heroData: Hero = {
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
-      href: '/assets/resume.pdf',
+      href: './assets/resume.pdf',
     },
     {
       href: `#${SectionId.Contact}`,
