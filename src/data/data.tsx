@@ -23,7 +23,6 @@ import heroImage from '../images/shebin1mg2.jpg';
 //import profilepic from '../images/profilepic.jpg';
 import profilepic from '../images/shebinimg1.jpg'
 import testimonialImage from '../images/testimonial.webp';
-
 import {
   About,
   ContactSection,
