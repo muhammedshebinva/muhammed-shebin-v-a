@@ -512,7 +512,7 @@ export const contact: ContactSection = {
     {
       type: ContactType.LinkedIn,
       text: 'muhammedshebinva',
-      href: 'https://www.linkedin.com/in/muhammed-shebin-06978b213/',
+      href: 'https://www.linkedin.com/in/muhammed-shebin-v-a-06978b213?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
     }
   ],
 };
@@ -523,6 +523,6 @@ export const contact: ContactSection = {
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/muhammedshebinva'},
   {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/16924852/shebin'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/muhammed-shebin-06978b213/'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/muhammed-shebin-v-a-06978b213?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'},
   {label: 'Twitter', Icon: TwitterIcon, href: 'https://x.com/shebin_vs'},
 ];
