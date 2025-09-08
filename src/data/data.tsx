@@ -19,7 +19,7 @@ import porfolioImage5 from '../images/portfolio/olx clone.png';
 //import  heroImage from '../images/backgroundimg.png';
 import porfolioImage2 from '../images/portfolio/placementPortalHome.png';
 //import heroImage from '../images/header-background.webp';
-import heroImage from '../images/shebin1mg2.jpg';
+import heroImage from '../images/shebinIMGN1.jpg';
 //import profilepic from '../images/profilepic.jpg';
 import profilepic from '../images/shebinimg1.jpg'
 import testimonialImage from '../images/testimonial.webp';
