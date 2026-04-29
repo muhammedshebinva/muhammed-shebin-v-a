@@ -72,7 +72,7 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a <strong className="text-stone-100"> Full Stack Developer (MERN) | AI Engineer</strong>, currently working
+        I'm a <strong className="text-stone-100"> Full Stack Developer (MERN) | Python | AI Engineer</strong>, currently working
         at <strong className="text-stone-100">Infosys Limited</strong> Banaglore
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -467,7 +467,7 @@ export const experience: TimelineItem[] = [
     content: (
       <p>
         Senior Systems Associate with over 3.5 years of experience in architecting scalable web applications and
-        monitoring dashboards.In current project I am focused on the intersection of ITSM and Agentic AI, building
+        monitoring dashboards.In current project I am focused on the intersection of ITSM(ServiceNow) and Agentic AI (Python, Azure Open Ai, RAG, MCP, Langraph), building
         FastAPI-based MCP servers and LangGraph agents to automate complex enterprise workflows within the Infosys Topaz
         and ServiceNow ecosystems. From developing full-stack features for the LEX Learning Platform to designing
         real-time monitoring dashboards for global infrastructure health, I thrive on building tools that reduce manual
