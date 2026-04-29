@@ -16,13 +16,8 @@ const About: FC = memo(() => {
               <Image alt="about-me-image" className="h-full w-full object-cover" src={profileImageSrc} />
             </div> */}
             <div className="relative h-64 w-64 overflow-hidden rounded-xl sm:h-82 sm:w-72 md:h-82 md:w-52">
-  <Image 
-    alt="about-me-image" 
-    className="h-full w-full object-cover" 
-    src={profileImageSrc} 
-    priority 
-  />
-</div>
+              <Image alt="about-me-image" className="h-full w-full object-cover" priority src={profileImageSrc} />
+            </div>
           </div>
         )}
         <div className={classNames('col-span-1 flex flex-col gap-y-6', {'md:col-span-3': !!profileImageSrc})}>

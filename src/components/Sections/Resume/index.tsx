@@ -21,7 +21,6 @@ const Resume: FC = memo(() => {
           ))}
         </ResumeSection>
         <ResumeSection title="Skills">
-          
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             {skills.map((skillgroup, index) => (
               <SkillGroup key={`${skillgroup.name}-${index}`} skillGroup={skillgroup} />

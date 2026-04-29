@@ -18,12 +18,12 @@ import porfolioImage3 from '../images/portfolio/netflixClone.png';
 import porfolioImage5 from '../images/portfolio/olx clone.png';
 //import  heroImage from '../images/backgroundimg.png';
 import porfolioImage2 from '../images/portfolio/placementPortalHome.png';
+import profilepic from '../images/portfolio/profileShebin1.jpeg';
+// import testimonialImage from '../images/testimonial.webp';
 //import heroImage from '../images/header-background.webp';
 // import heroImage from '../images/';
 //import profilepic from '../images/profilepic.jpg';
 import heroImage from '../images/workimg1.jpeg';
-import profilepic from '../images/portfolio/profileShebin1.jpeg'
-import testimonialImage from '../images/testimonial.webp';
 import {
   About,
   ContactSection,
@@ -33,7 +33,6 @@ import {
   PortfolioItem,
   SkillGroup,
   Social,
-  TestimonialSection,
   TimelineItem,
 } from './dataDef';
 
@@ -42,7 +41,7 @@ import {
  */
 export const homePageMeta: HomepageMeta = {
   title: 'muhammed shebin',
-  description: "muhammed shebin portfolio web",
+  description: 'muhammed shebin portfolio web',
 };
 
 /**
@@ -70,20 +69,20 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a  <strong className="text-stone-100"> Full Stack Developer (MERN) | AI Engineer</strong>, currently working
+        I'm a <strong className="text-stone-100"> Full Stack Developer (MERN) | AI Engineer</strong>, currently working
         at <strong className="text-stone-100">Infosys Limited</strong> Banaglore
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-     Senior Systems Associate with over 3.5 years of experience in
-      architecting scalable web applications and monitoring dashboards.
-      In current project I am focused on the intersection of ITSM and Agentic AI, 
-      building MCP servers and LangGraph agents to automate complex enterprise workflows for ServiceNow ecosystems.</p>
+        Senior Systems Associate with over 3.5 years of experience in architecting scalable web applications and
+        monitoring dashboards. In current project I am focused on the intersection of ITSM and Agentic AI, building MCP
+        servers and LangGraph agents to automate complex enterprise workflows for ServiceNow ecosystems.
+      </p>
     </>
   ),
   actions: [
     {
-     // href: '/assets/resume.pdf',
-     
+      // href: '/assets/resume.pdf',
+
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -122,7 +121,6 @@ export const aboutData: About = {
  * Skills section
  */
 export const skills: SkillGroup[] = [
-
   {
     name: 'Frontend development',
     skills: [
@@ -189,37 +187,34 @@ export const skills: SkillGroup[] = [
         level: 10,
       },
       {
-        name:'Docker',
-        level: 9
-      }
+        name: 'Docker',
+        level: 9,
+      },
     ],
   },
   {
-    name:'Programming languages',
-    skills:[
+    name: 'Programming languages',
+    skills: [
       {
-        name:"javaScript",
-        level:10
+        name: 'javaScript',
+        level: 10,
       },
       {
-        name:"Python",
-        level:9
+        name: 'Python',
+        level: 9,
       },
       {
-        name:"java",
-        level:7
+        name: 'java',
+        level: 7,
       },
-    ]
+    ],
   },
-  
- 
 ];
 
 /**
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
-  
   {
     title: 'Placement Portal',
     description: `Overview: The Online Placement Portal is a comprehensive web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js) designed to streamline the job placement process for companies and job seekers. This platform enables companies to register, post job openings, and manage applicants, while users can apply for jobs and track their application status.
@@ -413,7 +408,6 @@ Conclusion: The OLX Clone project demonstrates the ability to create a fully fun
     url: 'https://github.com/muhammedshebinva/React_tutorial_olx_clone',
     image: porfolioImage5,
   },
-  
 ];
 
 /**
@@ -424,21 +418,41 @@ export const education: TimelineItem[] = [
     date: '',
     location: 'Bharathiar University',
     title: 'BSc Computer Science (8.6 CGPA)',
-    content: <p>Learned foundational concepts in programming, algorithms, data structures, and software development methodologies. Courses in operating systems, databases, and web development were particularly impactful, providing a solid technical base.
-I also gained experience with version control systems like Git, which has been essential in my current role as a software engineer. Learning about Agile methodologies helped me understand project management and iterative development processes.
-    </p>,
+    content: (
+      <p>
+        Learned foundational concepts in programming, algorithms, data structures, and software development
+        methodologies. Courses in operating systems, databases, and web development were particularly impactful,
+        providing a solid technical base. I also gained experience with version control systems like Git, which has been
+        essential in my current role as a software engineer. Learning about Agile methodologies helped me understand
+        project management and iterative development processes.
+      </p>
+    ),
   },
   {
     date: '',
     location: 'University of Mysore',
     title: 'MCA (9 CGPA)',
-    content: <p>Through my Master of Computer Applications (MCA), I have built a robust foundation in advanced technical disciplines and professional leadership. My academic journey focused on mastering Data Structures and Algorithms (DSA), Java, and Python, alongside specialized coursework in Cloud Computing, Artificial Intelligence, and Linux Programming. By combining deep dives into Advanced Software Engineering and Database Management with dedicated training in Professional Management and Communication, I have developed the expertise to architect scalable technical solutions and lead complex projects within high-performance engineering environments. </p>,
+    content: (
+      <p>
+        Through my Master of Computer Applications (MCA), I have built a robust foundation in advanced technical
+        disciplines and professional leadership. My academic journey focused on mastering Data Structures and Algorithms
+        (DSA), Java, and Python, alongside specialized coursework in Cloud Computing, Artificial Intelligence, and Linux
+        Programming. By combining deep dives into Advanced Software Engineering and Database Management with dedicated
+        training in Professional Management and Communication, I have developed the expertise to architect scalable
+        technical solutions and lead complex projects within high-performance engineering environments.{' '}
+      </p>
+    ),
   },
   {
     date: '',
     location: 'Kerala',
     title: 'Higher Secondary (7.8 CGPA)',
-    content: <p>My time in school equipped me with critical thinking skills, a problem-solving mindset, and technical proficiency that I apply daily in my work. I'm continually building on this foundation</p>,
+    content: (
+      <p>
+        My time in school equipped me with critical thinking skills, a problem-solving mindset, and technical
+        proficiency that I apply daily in my work. I'm continually building on this foundation
+      </p>
+    ),
   },
 ];
 
@@ -449,11 +463,13 @@ export const experience: TimelineItem[] = [
     title: 'Senior Systems Associate ',
     content: (
       <p>
-        Senior Systems Associate with over 3.5 years of experience in architecting scalable web applications and monitoring dashboards.In current project I am focused on the intersection of ITSM and Agentic AI, building FastAPI-based MCP servers and LangGraph agents to automate complex enterprise workflows within the Infosys Topaz and ServiceNow ecosystems.  
-
-From developing full-stack features for the LEX Learning Platform to designing real-time monitoring dashboards for global infrastructure health, I thrive on building tools that reduce manual overhead and improve technical productivity.  
-
-Core Tech: React.js, Node.js, Python, LangGraph, Azure OpenAI, and ServiceNow/SolarWinds API Integration
+        Senior Systems Associate with over 3.5 years of experience in architecting scalable web applications and
+        monitoring dashboards.In current project I am focused on the intersection of ITSM and Agentic AI, building
+        FastAPI-based MCP servers and LangGraph agents to automate complex enterprise workflows within the Infosys Topaz
+        and ServiceNow ecosystems. From developing full-stack features for the LEX Learning Platform to designing
+        real-time monitoring dashboards for global infrastructure health, I thrive on building tools that reduce manual
+        overhead and improve technical productivity. Core Tech: React.js, Node.js, Python, LangGraph, Azure OpenAI, and
+        ServiceNow/SolarWinds API Integration
       </p>
     ),
   },
@@ -500,7 +516,8 @@ Core Tech: React.js, Node.js, Python, LangGraph, Azure OpenAI, and ServiceNow/So
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'I’m currently seeking new job opportunities. If you’re interested in collaborating or have any potential openings, feel free to reach out!',
+  description:
+    'I’m currently seeking new job opportunities. If you’re interested in collaborating or have any potential openings, feel free to reach out!',
   items: [
     {
       type: ContactType.Email,
@@ -521,7 +538,7 @@ export const contact: ContactSection = {
       type: ContactType.LinkedIn,
       text: 'muhammedshebinva',
       href: 'https://www.linkedin.com/in/muhammed-shebin-v-a-06978b213?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-    }
+    },
   ],
 };
 
@@ -531,6 +548,10 @@ export const contact: ContactSection = {
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/muhammedshebinva'},
   {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/16924852/shebin'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/muhammed-shebin-v-a-06978b213?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'},
+  {
+    label: 'LinkedIn',
+    Icon: LinkedInIcon,
+    href: 'https://www.linkedin.com/in/muhammed-shebin-v-a-06978b213?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+  },
   {label: 'Twitter', Icon: TwitterIcon, href: 'https://x.com/shebin_vs'},
 ];

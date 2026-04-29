@@ -3,9 +3,9 @@ import classNames from 'classnames';
 import Image from 'next/image';
 import {FC, memo} from 'react';
 
-import profileImage from '../../../images/shebinIMGN1.jpg'
 import {contact, SectionId} from '../../../data/data';
 import {ContactType, ContactValue} from '../../../data/dataDef';
+import profileImage from '../../../images/shebinIMGN1.jpg';
 import FacebookIcon from '../../Icon/FacebookIcon';
 import GithubIcon from '../../Icon/GithubIcon';
 import InstagramIcon from '../../Icon/InstagramIcon';
@@ -35,15 +35,13 @@ const Contact: FC = memo(() => {
         </div>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           <div className="order-2 col-span-1 md:order-1 ">
-          
-
-           {!!profileImage && (
-          <div className="col-span-1 flex justify-center md:justify-start">
-            <div className="relative h-48 w-48 overflow-hidden rounded-xl md:h-42 md:w-42">
-              <Image alt="about-me-image" className="h-full w-full object-cover" src={profileImage} />
-            </div>
-          </div>
-        )}
+            {!!profileImage && (
+              <div className="col-span-1 flex justify-center md:justify-start">
+                <div className="relative h-48 w-48 overflow-hidden rounded-xl md:h-42 md:w-42">
+                  <Image alt="about-me-image" className="h-full w-full object-cover" src={profileImage} />
+                </div>
+              </div>
+            )}
           </div>
           <div className="order-1 col-span-1 flex flex-col gap-y-4 md:order-2">
             <p className="prose leading-6 text-neutral-300">{description}</p>
