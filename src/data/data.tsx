@@ -19,8 +19,9 @@ import porfolioImage5 from '../images/portfolio/olx clone.png';
 //import  heroImage from '../images/backgroundimg.png';
 import porfolioImage2 from '../images/portfolio/placementPortalHome.png';
 //import heroImage from '../images/header-background.webp';
-// import heroImage from '../../public/images/';
+// import heroImage from '../images/';
 //import profilepic from '../images/profilepic.jpg';
+import heroImage from '../images/workimg1.jpeg';
 import profilepic from '../images/shebinimg1.jpg'
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -69,13 +70,14 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a  <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
+        I'm a  <strong className="text-stone-100"> Full Stack Developer (MERN) | AI Engineer</strong>, currently working
         at <strong className="text-stone-100">Infosys Limited</strong>
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-      with 2 years of hands-on experience in designing, developing, and deploying
-      enterprise grade web applications Committed to delivering high-quality, scalable, and user-centric solutions. 
-      </p>
+     Senior Systems Associate with over 3.5 years of experience in
+      architecting scalable web applications and monitoring dashboards.
+      In current project I am focused on the intersection of ITSM and Agentic AI, 
+      building MCP servers and LangGraph agents to automate complex enterprise workflows for ServiceNow ecosystems.</p>
     </>
   ),
   actions: [
@@ -85,7 +87,7 @@ export const heroData: Hero = {
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
-      href: './assets/resume.pdf',
+      href: '/assets/muhammed_shebin.pdf',
     },
     {
       href: `#${SectionId.Contact}`,
