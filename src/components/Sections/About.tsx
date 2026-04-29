@@ -12,9 +12,17 @@ const About: FC = memo(() => {
       <div className={classNames('grid grid-cols-1 gap-y-4', {'md:grid-cols-4': !!profileImageSrc})}>
         {!!profileImageSrc && (
           <div className="col-span-1 flex justify-center md:justify-start">
-            <div className="relative h-24 w-24 overflow-hidden rounded-xl md:h-32 md:w-32">
+            {/* <div className="relative h-54 w-54 overflow-hidden rounded-xl md:h-62 md:w-52 ">
               <Image alt="about-me-image" className="h-full w-full object-cover" src={profileImageSrc} />
-            </div>
+            </div> */}
+            <div className="relative h-64 w-64 overflow-hidden rounded-xl sm:h-82 sm:w-72 md:h-82 md:w-52">
+  <Image 
+    alt="about-me-image" 
+    className="h-full w-full object-cover" 
+    src={profileImageSrc} 
+    priority 
+  />
+</div>
           </div>
         )}
         <div className={classNames('col-span-1 flex flex-col gap-y-6', {'md:col-span-3': !!profileImageSrc})}>

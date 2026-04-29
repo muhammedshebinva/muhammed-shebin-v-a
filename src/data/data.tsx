@@ -22,7 +22,7 @@ import porfolioImage2 from '../images/portfolio/placementPortalHome.png';
 // import heroImage from '../images/';
 //import profilepic from '../images/profilepic.jpg';
 import heroImage from '../images/workimg1.jpeg';
-import profilepic from '../images/shebinimg1.jpg'
+import profilepic from '../images/portfolio/profileShebin1.jpeg'
 import testimonialImage from '../images/testimonial.webp';
 import {
   About,
@@ -71,7 +71,7 @@ export const heroData: Hero = {
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I'm a  <strong className="text-stone-100"> Full Stack Developer (MERN) | AI Engineer</strong>, currently working
-        at <strong className="text-stone-100">Infosys Limited</strong>
+        at <strong className="text-stone-100">Infosys Limited</strong> Banaglore
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
      Senior Systems Associate with over 3.5 years of experience in
@@ -102,13 +102,18 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I'm a passionate Full Stack Developer with a strong foundation in React and Node.js. I enjoy building dynamic web applications from the ground up, combining my love for both frontend and backend development. I'm always eager to learn new technologies and stay up-to-date with the latest industry trends.`,
+  description: `I’m a Full-Stack Developer with a strong foundation in React and Node.js.
+  I enjoy building dynamic web applications from the ground up, merging my passion for 
+  frontend and backend development. Currently, I am at Infosys Bangalore, 
+  where I develop monitoring dashboards and collaborate with IT infrastructure
+   teams to transition toward Agentic AI. This includes building MCP servers designed 
+   to reduce the workload for both ITSM and networking teams.`,
   aboutItems: [
-    {label: 'Location', text: 'Kerala, India', Icon: MapIcon},
-    {label: 'Age', text: '23', Icon: CalendarIcon},
+    {label: 'Location', text: 'Electronic City Phase 1, Bangalore, India', Icon: MapIcon},
+    {label: 'Age', text: '24', Icon: CalendarIcon},
     {label: 'Nationality', text: 'Indian', Icon: FlagIcon},
-    {label: 'Interests', text: 'Coding, Video editing, Photography', Icon: SparklesIcon},
-    {label: 'Education', text: 'BSc Computer Science', Icon: AcademicCapIcon},
+    {label: 'Interests', text: 'Coding, Tech Mentorship, Tech Explorer', Icon: SparklesIcon},
+    {label: 'Education', text: 'MCA, BSc Computer Science', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'Infosys Limited', Icon: BuildingOffice2Icon},
   ],
 };
@@ -190,26 +195,23 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    name: 'Spoken languages',
-    skills: [
+    name:'Programming languages',
+    skills:[
       {
-        name: 'English',
-        level: 10,
+        name:"javaScript",
+        level:10
       },
       {
-        name: 'hindi',
-        level: 8,
+        name:"Python",
+        level:9
       },
       {
-        name: 'tamil',
-        level: 8,
+        name:"java",
+        level:7
       },
-      {
-        name: 'malayalam',
-        level: 10,
-      },
-    ],
+    ]
   },
+  
  
 ];
 
@@ -428,6 +430,12 @@ I also gained experience with version control systems like Git, which has been e
   },
   {
     date: '',
+    location: 'University of Mysore',
+    title: 'MCA (9 CGPA)',
+    content: <p>Through my Master of Computer Applications (MCA), I have built a robust foundation in advanced technical disciplines and professional leadership. My academic journey focused on mastering Data Structures and Algorithms (DSA), Java, and Python, alongside specialized coursework in Cloud Computing, Artificial Intelligence, and Linux Programming. By combining deep dives into Advanced Software Engineering and Database Management with dedicated training in Professional Management and Communication, I have developed the expertise to architect scalable technical solutions and lead complex projects within high-performance engineering environments. </p>,
+  },
+  {
+    date: '',
     location: 'Kerala',
     title: 'Higher Secondary (7.8 CGPA)',
     content: <p>My time in school equipped me with critical thinking skills, a problem-solving mindset, and technical proficiency that I apply daily in my work. I'm continually building on this foundation</p>,
@@ -437,17 +445,15 @@ I also gained experience with version control systems like Git, which has been e
 export const experience: TimelineItem[] = [
   {
     date: 'Oct 2022 - Present',
-    location: 'Infosys Limited, Mysore India',
-    title: 'Full Stack Developer',
+    location: 'Infosys Limited, Bangalore India',
+    title: 'Senior Systems Associate ',
     content: (
       <p>
-        As a Full Stack Developer at Infosys Limited, I've been primarily involved in developing and maintaining web applications using a variety of technologies. 
-        My typical responsibilities include:
-        Creating user-friendly and visually appealing interfaces using React.js and its ecosystem (Redux, React Router, etc.)
+        Senior Systems Associate with over 3.5 years of experience in architecting scalable web applications and monitoring dashboards.In current project I am focused on the intersection of ITSM and Agentic AI, building FastAPI-based MCP servers and LangGraph agents to automate complex enterprise workflows within the Infosys Topaz and ServiceNow ecosystems.  
 
-        Building scalable and efficient server-side applications using Node.js and frameworks like Express.js also Designing and implementing database schemas using SQL and NoSQL databases (e.g., MySQL, MongoDB).
+From developing full-stack features for the LEX Learning Platform to designing real-time monitoring dashboards for global infrastructure health, I thrive on building tools that reduce manual overhead and improve technical productivity.  
 
-        Creating and consuming RESTful APIs to integrate with other systems.
+Core Tech: React.js, Node.js, Python, LangGraph, Azure OpenAI, and ServiceNow/SolarWinds API Integration
       </p>
     ),
   },
@@ -467,26 +473,26 @@ export const experience: TimelineItem[] = [
 /**
  * Testimonial section
  */
-export const testimonial: TestimonialSection = {
-  imageSrc: testimonialImage,
-  testimonials: [
-    {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
-    },
-    {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
-    },
-    {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
-    },
-  ],
-};
+// export const testimonial: TestimonialSection = {
+//   imageSrc: testimonialImage,
+//   testimonials: [
+//     {
+//       name: 'John Doe',
+//       text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
+//       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+//     },
+//     {
+//       name: 'Jane Doe',
+//       text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
+//       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+//     },
+//     {
+//       name: 'Someone else',
+//       text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
+//       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+//     },
+//   ],
+// };
 
 /**
  * Contact section
@@ -494,7 +500,7 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'I’m a passionate full stack developer currently seeking new job opportunities. If you’re interested in collaborating or have any potential openings, feel free to reach out!',
+  description: 'I’m currently seeking new job opportunities. If you’re interested in collaborating or have any potential openings, feel free to reach out!',
   items: [
     {
       type: ContactType.Email,
@@ -503,7 +509,7 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.Location,
-      text: 'Kerala, India',
+      text: 'Bangalore, India',
       href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
     },
     {
