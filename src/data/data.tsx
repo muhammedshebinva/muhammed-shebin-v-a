@@ -8,6 +8,8 @@ import {
   SparklesIcon,
 } from '@heroicons/react/24/outline';
 
+const basePath = process.env.NODE_ENV === 'production' ? '/muhammed-shebin-v-a' : '';
+
 import GithubIcon from '../components/Icon/GithubIcon';
 //import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
@@ -87,7 +89,7 @@ export const heroData: Hero = {
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
-      href: '/assets/muhammed_shebin.pdf',
+      href: `${basePath}/assets/muhammed_shebin.pdf`,
     },
     {
       href: `#${SectionId.Contact}`,

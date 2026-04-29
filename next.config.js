@@ -1,5 +1,6 @@
 /* eslint-env node */
-
+/** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
   webpack: config => {
@@ -39,6 +40,12 @@ const nextConfig = {
   },
   typescript: {
     ignoreBuildErrors: true,
+  },
+
+  basePath: isProd ? '/muhammed-shebin-v-a' : '',
+  assetPrefix: isProd ? '/muhammed-shebin-v-a/' : '',
+  images: {
+    unoptimized: true, // Required for GitHub Pages
   },
 };
 
