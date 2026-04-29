@@ -54,8 +54,9 @@ const Hero: FC = memo(() => {
                       primary ? 'border-l-lime-950 ring-offset-lime-950' : 'border-white ring-white',
                     )}
                     href={href}
-                    rel={isResume ? 'noopener noreferrer' : undefined}
                     key={text}
+                    rel={isResume ? 'noopener noreferrer' : undefined}
+                   
                     // Open in new tab ONLY if it's the resume
                     target={isResume ? '_blank' : undefined}>
                     {text}
