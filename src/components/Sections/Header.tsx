@@ -11,7 +11,8 @@ export const headerID = 'headerNav';
 
 const Header: FC = memo(() => {
   const [currentSection, setCurrentSection] = useState<SectionId | null>(null);
-  const navSections = useMemo(() => [SectionId.About, SectionId.Resume, SectionId.Portfolio, SectionId.Contact], []);
+  // Added SectionId.MyStory to navSections
+  const navSections = useMemo(() => [SectionId.About, SectionId.Resume, SectionId.MyStory, SectionId.Portfolio, SectionId.Contact], []);
 
   const intersectionHandler = useCallback((section: SectionId | null) => {
     section && setCurrentSection(section);
