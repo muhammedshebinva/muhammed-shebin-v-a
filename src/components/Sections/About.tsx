@@ -23,14 +23,16 @@ const About: FC = memo(() => {
         <div className={classNames('col-span-1 flex flex-col gap-y-6', {'md:col-span-3': !!profileImageSrc})}>
           <div className="flex flex-col gap-y-2">
             <h2 className="text-2xl font-bold text-white">About me</h2>
-            <p className="prose prose-sm text-gray-300 sm:prose-base">{description}</p>
+            <p className="prose prose-sm leading-relaxed text-gray-300 sm:prose-base">{description}</p>
           </div>
-          <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+          <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4">
             {aboutItems.map(({label, text, Icon}, idx) => (
-              <li className="col-span-1 flex  items-start gap-x-2" key={idx}>
-                {Icon && <Icon className="h-5 w-5 text-white" />}
-                <span className="text-sm font-bold text-white">{label}:</span>
-                <span className=" text-sm text-gray-300">{text}</span>
+              <li className="col-span-1 flex items-start gap-x-2 break-words" key={idx}>
+                {Icon && <Icon className="mt-0.5 h-5 w-5 shrink-0 text-white" />}
+                <div className="flex flex-col gap-x-1 gap-y-1 sm:flex-row sm:items-start">
+                  <span className="text-sm font-bold text-white">{label}:</span>
+                  <span className="text-sm text-gray-300">{text}</span>
+                </div>
               </li>
             ))}
           </ul>
