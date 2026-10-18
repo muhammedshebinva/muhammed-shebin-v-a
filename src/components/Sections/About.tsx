@@ -7,35 +7,40 @@ import Section from '../Layout/Section';
 
 const About: FC = memo(() => {
   const {profileImageSrc, description, aboutItems} = aboutData;
+
   return (
-    <Section className="bg-neutral-800" sectionId={SectionId.About}>
-      <div className={classNames('grid grid-cols-1 gap-y-4', {'md:grid-cols-4': !!profileImageSrc})}>
+    <Section className="bg-[#0b1120] text-white" sectionId={SectionId.About}>
+      <div className={classNames('grid grid-cols-1 gap-8', {'md:grid-cols-[0.9fr_1.1fr]': !!profileImageSrc})}>
         {!!profileImageSrc && (
-          <div className="col-span-1 flex justify-center md:justify-start">
-            {/* <div className="relative h-54 w-54 overflow-hidden rounded-xl md:h-62 md:w-52 ">
-              <Image alt="about-me-image" className="h-full w-full object-cover" src={profileImageSrc} />
-            </div> */}
-            <div className="relative h-64 w-64 overflow-hidden rounded-xl sm:h-82 sm:w-72 md:h-82 md:w-52">
-              <Image alt="about-me-image" className="h-full w-full object-cover" priority src={profileImageSrc} />
+          <div className="flex justify-center md:justify-start">
+            <div className="glass-card relative w-full max-w-[340px] overflow-hidden rounded-[28px] p-3">
+              <div className="overflow-hidden rounded-[22px] border border-white/10 bg-slate-900/50">
+                <Image alt="about-me-image" className="h-[420px] w-full object-cover" priority src={profileImageSrc} />
+              </div>
             </div>
           </div>
         )}
-        <div className={classNames('col-span-1 flex flex-col gap-y-6', {'md:col-span-3': !!profileImageSrc})}>
-          <div className="flex flex-col gap-y-2">
-            <h2 className="text-2xl font-bold text-white">About me</h2>
-            <p className="prose prose-sm leading-relaxed text-gray-300 sm:prose-base">{description}</p>
+
+        <div className="flex flex-col gap-6">
+          <div className="space-y-3">
+            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-lime-300">About me</p>
+            <h2 className="text-3xl font-black tracking-[-0.06em] text-white sm:text-4xl">I design AI products with business context and engineering discipline.</h2>
+            <p className="max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">{description}</p>
           </div>
-          <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4">
+
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             {aboutItems.map(({label, text, Icon}, idx) => (
-              <li className="col-span-1 flex items-start gap-x-2 break-words" key={idx}>
-                {Icon && <Icon className="mt-0.5 h-5 w-5 shrink-0 text-white" />}
-                <div className="flex flex-col gap-x-1 gap-y-1 sm:flex-row sm:items-start">
-                  <span className="text-sm font-bold text-white">{label}:</span>
-                  <span className="text-sm text-gray-300">{text}</span>
+              <div className="glass-card rounded-2xl p-4" key={idx}>
+                <div className="flex items-start gap-3">
+                  {Icon && <Icon className="mt-1 h-5 w-5 shrink-0 text-lime-300" />}
+                  <div className="space-y-1">
+                    <p className="text-sm font-semibold text-white">{label}</p>
+                    <p className="text-sm leading-relaxed text-slate-300">{text}</p>
+                  </div>
                 </div>
-              </li>
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
       </div>
     </Section>
