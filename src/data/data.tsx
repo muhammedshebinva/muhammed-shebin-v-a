@@ -3,7 +3,6 @@ import {
   ArrowDownTrayIcon,
   BuildingOffice2Icon,
   CalendarIcon,
-  FlagIcon,
   MapIcon,
   SparklesIcon,
 } from '@heroicons/react/24/outline';
@@ -17,13 +16,13 @@ import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import porfolioImage4 from '../images/portfolio/collegeWeb.png';
 import porfolioImage3 from '../images/portfolio/netflixClone.png';
-import porfolioImage5 from '../images/portfolio/olx clone.png';
+import porfolioImage5 from '../images/portfolio/olx-clone.png';
 //import  heroImage from '../images/backgroundimg.png';
 import porfolioImage2 from '../images/portfolio/placementPortalHome.png';
 import profilepic from '../images/portfolio/profileShebin1.jpeg';
 import testimonialImage from '../images/testimonial.webp';
 //import heroImage from '../images/header-background.webp';
-// import heroImage from '../images/';
+//import heroImage from '../images/';
 //import profilepic from '../images/profilepic.jpg';
 import heroImage from '../images/workimg1.jpeg';
 import {
@@ -43,8 +42,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'muhammed shebin',
-  description: 'muhammed shebin portfolio web',
+  title: 'Muhammed Shebin V A | AI Engineer & Full-Stack Developer',
+  description: 'Portfolio of Muhammed Shebin V A, AI Engineer and Full-Stack Developer specializing in Agentic AI, Python, FastAPI, React, and enterprise IT operations automation.',
 };
 
 /**
@@ -59,6 +58,7 @@ export const SectionId = {
   Skills: 'skills',
   Stats: 'stats',
   Testimonials: 'testimonials',
+  MyStory: 'my-story', // Added for new section
 } as const;
 
 export type SectionId = (typeof SectionId)[keyof typeof SectionId];
@@ -68,24 +68,19 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Muhammed Shebin `,
+  name: `I'm Muhammed Shebin V A`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a <strong className="text-stone-100"> Full Stack Developer (MERN) | Python | AI Engineer</strong>, currently working
-        at <strong className="text-stone-100">Infosys Limited</strong> Banaglore
+        I'm an <strong className="text-stone-100">AI Engineer | Full-Stack Developer (Python, React) | Agentic AI & Generative AI</strong>, with 4 years at Infosys.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Senior Systems Associate with over 3.5 years of experience in architecting scalable web applications and
-        monitoring dashboards. In current project I am focused on the intersection of ITSM and Agentic AI, building MCP
-        servers and LangGraph agents to automate complex enterprise workflows for ServiceNow ecosystems.
+        Currently building a governed, multi-tenant vulnerability-remediation platform and enterprise ITSM analytics tools using LangGraph, LangChain, Azure OpenAI GPT-4o, RAG, semantic search, and automated ticket-quality scoring.
       </p>
     </>
   ),
   actions: [
     {
-      // href: '/assets/resume.pdf',
-
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -104,19 +99,13 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I’m a Full-Stack Developer with a strong foundation in React and Node.js.
-  I enjoy building dynamic web applications from the ground up, merging my passion for 
-  frontend and backend development. Currently, I am at Infosys Bangalore, 
-  where I develop monitoring dashboards and collaborate with IT infrastructure
-   teams to transition toward Agentic AI. This includes building MCP servers designed 
-   to reduce the workload for both ITSM and networking teams.`,
+  description: `I’m an AI Engineer and Full-Stack Developer with 4 years at Infosys, architecting production Agentic AI systems for enterprise IT operations and security. I build governed multi-tenant platforms and multi-agent ITSM analytics tools spanning RAG, semantic search, and automated ticket-quality scoring, while delivering full-stack React/TypeScript dashboards end-to-end.`,
   aboutItems: [
-    {label: 'Location', text: 'Electronic City Phase 1, Bangalore, India', Icon: MapIcon},
-    {label: 'Age', text: '24', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Indian', Icon: FlagIcon},
-    {label: 'Interests', text: 'Coding, Tech Mentorship, Tech Explorer', Icon: SparklesIcon},
-    {label: 'Education', text: 'MCA, BSc Computer Science', Icon: AcademicCapIcon},
+    {label: 'Location', text: 'Bengaluru, India (Open to relocation)', Icon: MapIcon},
+    {label: 'Interests', text: 'Agentic AI, Automation, Governance', Icon: SparklesIcon},
+    {label: 'Education', text: 'MCA (Online), BSc Computer Science', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'Infosys Limited', Icon: BuildingOffice2Icon},
+    {label: 'Availability', text: 'Open to new opportunities', Icon: CalendarIcon},
   ],
 };
 
@@ -125,92 +114,154 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Frontend development',
+    name: 'AI & GenAI',
     skills: [
-      {
-        name: 'React',
-        level: 9,
-      },
-      {
-        name: 'Css',
-        level: 8,
-      },
-      {
-        name: 'Next JS',
-        level: 7,
-      },
-      {
-        name: 'Typescript',
-        level: 8,
-      },
-      {
-        name: 'GraphQL',
-        level: 6,
-      },
+      {name: 'Agentic AI', level: 10},
+      {name: 'Multi-Agent Systems', level: 10},
+      {name: 'LangGraph (StateGraph & ReAct)', level: 10},
+      {name: 'LangChain', level: 10},
+      {name: 'Azure OpenAI (GPT-4o)', level: 10},
+      {name: 'LLM Orchestration', level: 9},
+      {name: 'Prompt Engineering', level: 9},
+      {name: 'RAG', level: 9},
+      {name: 'Vector Databases', level: 8},
+      {name: 'OpenAI Embeddings', level: 8},
+      {name: 'Semantic Search (SBERT, BM25)', level: 9},
+      {name: 'Cross-Encoder Reranking', level: 8},
+      {name: 'Hybrid Search', level: 8},
+      {name: 'MCP', level: 9},
     ],
   },
   {
-    name: 'Backend development',
+    name: 'AI Governance & Guardrails',
     skills: [
-      {
-        name: 'Node.js',
-        level: 9,
-      },
-      {
-        name: 'Express',
-        level: 8,
-      },
-      {
-        name: 'JavaScript',
-        level: 10,
-      },
-      {
-        name: 'SQL',
-        level: 9,
-      },
-      {
-        name: 'MongoDB',
-        level: 9,
-      },
+      {name: 'Deterministic Policy Engines', level: 9},
+      {name: 'Human-in-the-Loop Approval Gating', level: 9},
+      {name: 'Confidence-Based Automation Controls', level: 8},
+      {name: 'PII / Secret Redaction', level: 8},
+      {name: 'Prompt-Injection Defense', level: 8},
+      {name: 'Topic Gating', level: 8},
     ],
   },
   {
-    name: 'Other',
+    name: 'Backend & APIs',
     skills: [
-      {
-        name: 'AWS',
-        level: 8,
-      },
-      {
-        name: 'GCP',
-        level: 6,
-      },
-      {
-        name: 'GIT',
-        level: 10,
-      },
-      {
-        name: 'Docker',
-        level: 9,
-      },
+      {name: 'Python', level: 9},
+      {name: 'FastAPI', level: 9},
+      {name: 'Flask', level: 8},
+      {name: 'Node.js', level: 9},
+      {name: 'RESTful APIs', level: 9},
+      {name: 'JWT', level: 8},
+      {name: 'RBAC', level: 8},
+      {name: 'Pydantic', level: 8},
+      {name: 'Temporal', level: 8},
+      {name: 'Microservices', level: 8},
     ],
   },
   {
-    name: 'Programming languages',
+    name: 'Frontend',
     skills: [
-      {
-        name: 'javaScript',
-        level: 10,
-      },
-      {
-        name: 'Python',
-        level: 9,
-      },
-      {
-        name: 'java',
-        level: 7,
-      },
+      {name: 'React.js', level: 10},
+      {name: 'TypeScript', level: 9},
+      {name: 'JavaScript (ES6+)', level: 10},
+      {name: 'Redux Toolkit', level: 7},
+      {name: 'Tailwind CSS', level: 9},
+      {name: 'HTML5', level: 9},
+      {name: 'CSS3', level: 8},
     ],
+  },
+  {
+    name: 'Databases & Caching',
+    skills: [
+      {name: 'PostgreSQL (RLS)', level: 8},
+      {name: 'DuckDB (VSS)', level: 8},
+      {name: 'Redis', level: 8},
+      {name: 'PL/SQL', level: 7},
+      {name: 'SQL', level: 9},
+    ],
+  },
+  {
+    name: 'DevOps & Tools',
+    skills: [
+      {name: 'Docker', level: 8},
+      {name: 'Git', level: 10},
+      {name: 'GitHub', level: 9},
+      {name: 'ServiceNow REST API', level: 7},
+      {name: 'Jira', level: 7},
+      {name: 'SolarWinds', level: 7},
+    ],
+  },
+  {
+    name: 'Hosting & Deployment',
+    skills: [
+      {name: 'IIS (Windows Server)', level: 6},
+      {name: 'Apache httpd (Linux)', level: 6},
+      {name: 'NSSM (Windows Services)', level: 7},
+      {name: 'Virtual Machines', level: 7},
+    ],
+  },
+  {
+    name: 'AI-Assisted Development',
+    skills: [
+      {name: 'Claude Code', level: 9},
+      {name: 'GitHub Copilot', level: 9},
+    ],
+  },
+];
+
+/**
+ * My Story Timeline
+ */
+export const myStoryTimeline: TimelineItem[] = [
+  {
+    date: 'Jun 2019 - Jul 2022',
+    location: 'Bharathiar University',
+    title: 'BSc in Computer Science',
+    content: (
+      <p>
+        Built a foundation in programming, algorithms, data structures, web development, and Git while exploring project-based learning in software engineering.
+      </p>
+    ),
+  },
+  {
+    date: 'Jan 2024 - Mar 2026',
+    location: 'University of Mysore',
+    title: 'MCA (Online)',
+    content: (
+      <p>
+        Continued learning advanced technical topics in AI, ML, and software engineering while working full-time in enterprise product delivery.
+      </p>
+    ),
+  },
+  {
+    date: 'October 2022 - Present',
+    location: 'Infosys Limited, Bengaluru, India',
+    title: 'Senior Systems Associate',
+    content: (
+      <p>
+        Started in enterprise IT operations and evolved into building AI systems for ticket analytics, governance, and vulnerability remediation across multi-tenant workflows.
+      </p>
+    ),
+  },
+  {
+    date: '2024 - Present',
+    location: 'Infosys Limited',
+    title: 'Transition to Agentic AI',
+    content: (
+      <p>
+        Shifted into designing multi-agent workflows, governed AI controls, and semantic search systems for ITSM automation and operational intelligence.
+      </p>
+    ),
+  },
+  {
+    date: 'Present',
+    location: 'Bengaluru, India',
+    title: 'Current Focus',
+    content: (
+      <p>
+        Building a governed AI-assisted vulnerability remediation platform and continuing to deliver enterprise-grade agentic systems for IT operations.
+      </p>
+    ),
   },
 ];
 
@@ -219,274 +270,112 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
+    title: 'FVM (REMORA)',
+    description: `AI-assisted vulnerability remediation orchestration platform that unifies vulnerability scanners, CMDB, EDR, and ticketing tools into a governed remediation pipeline. Built with Python, FastAPI, PostgreSQL (RLS), Temporal, Redis, Docker, React, TypeScript, and Azure OpenAI.`,
+    url: '',
+    image: null,
+  },
+  {
+    title: 'Cognitive Analyzer',
+    description: `Intelligent ticket analytics platform using keyword matching, SBERT semantic similarity, and LLM-assisted residual clustering over Excel and ServiceNow data to detect trends and reduce ticket volumes. Tech: Python, Flask, LangGraph, LangChain, DuckDB, React, TypeScript, Docker.`,
+    url: '',
+    image: null,
+  },
+  {
+    title: 'CLARA',
+    description: `AI ITSM QA co-pilot that scores every work note across quality dimensions, detects duplicates, and generates coaching narratives for ticket quality improvement. Tech: Python, FastAPI, LangGraph, Azure OpenAI GPT-4o, OpenAI Embeddings, DuckDB, MCP, React.`,
+    url: '',
+    image: null,
+  },
+  {
+    title: 'SAGA',
+    description: `Multi-agent ITSM co-pilot focused on automated ticket triage, SLA-breach prediction, and service assistance through a React dashboard. Tech: Python, FastAPI, LangGraph, Azure OpenAI, PostgreSQL, React.`,
+    url: '',
+    image: null,
+  },
+  {
     title: 'Placement Portal',
-    description: `Overview: The Online Placement Portal is a comprehensive web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js) designed to streamline the job placement process for companies and job seekers. This platform enables companies to register, post job openings, and manage applicants, while users can apply for jobs and track their application status.
-
-Features:
-
-User Registration & Profile Management:
-
-Users (job seekers) can create and manage their profiles, upload resumes, and showcase their skills and experiences.
-Companies can register and create profiles to manage their job postings and view applicants.
-Job Posting & Management:
-
-Companies can post job vacancies with detailed descriptions, requirements, and application deadlines.
-Recruiters can edit or remove job postings as needed.
-Application Process:
-
-Job seekers can browse available job postings, filter them by category, location, and experience level, and apply directly through the portal.
-Users receive notifications about the status of their applications (submitted, under review, approved, or rejected).
-Applicant Tracking System:
-
-Recruiters can view a list of applicants for each job posting, complete with their profiles and application materials.
-The platform allows recruiters to approve or reject candidates and provide feedback.
-Search and Filter Functionality:
-
-Users can easily search for jobs based on various criteria, enhancing the discoverability of suitable positions.
-Recruiters can filter applicants based on skills, experience, and application status.
-Admin Dashboard:
-
-An admin panel for overseeing the entire platform, managing users and companies, and ensuring compliance with policies.
-Admins can generate reports on job postings, applications, and user engagement.
-Real-time Notifications:
-
-Users receive real-time updates regarding application status and new job postings relevant to their profiles.
-Responsive Design:
-
-The portal is optimized for both desktop and mobile devices, ensuring accessibility for all users.
-Technologies Used:
-
-MongoDB: For storing user profiles, job postings, and application data.
-Express.js: For creating a robust backend API to handle requests.
-React.js: For building a dynamic and responsive user interface.
-Node.js: For server-side logic and handling real-time notifications.
-`,
+    description: `MERN stack placement platform for managing job posts, candidate applications, and recruitment workflows for companies and job seekers.`,
     url: 'https://github.com/muhammedshebinva/Placement-Web-App-MERN',
     image: porfolioImage2,
   },
   {
     title: 'Netflix Clone',
-    description: `Project Description: Netflix Clone
-Overview: The Netflix Clone is a web application developed using React.js, designed to mimic the user experience of Netflix. This project utilizes the TMDM (The Movie Database) API to fetch and display movie details, allowing users to browse, search, and explore a wide variety of films and TV shows.
-
-Features:
-
-User Authentication:
-
-Users can sign up and log in to their accounts, providing a personalized experience.
-Session management ensures that users remain logged in across sessions.
-Movie Browsing:
-
-A visually appealing homepage displaying featured movies, trending titles, and popular genres.
-Infinite scrolling allows users to continuously browse through extensive movie lists.
-Search Functionality:
-
-Users can search for specific movies or TV shows using a search bar.
-Real-time search results are displayed as users type, enhancing the user experience.
-Movie Details Page:
-
-Clicking on a movie or show takes users to a detailed page featuring a synopsis, cast, release date, ratings, and trailers.
-Users can add movies to their favorites for easy access later.
-Responsive Design:
-
-The application is fully responsive, ensuring compatibility across various devices, including desktops, tablets, and mobile phones.
-API Integration:
-
-The TMDM API is used to fetch up-to-date information about movies, including trailers, reviews, and user ratings.
-Dynamic content updates based on API responses provide a seamless browsing experience.
-User Favorites:
-
-Users can save their favorite movies to a dedicated list for quick access.
-The favorites list is stored in local storage, allowing persistence across sessions.
-Genre Filters:
-
-Users can filter movies by genre, helping them discover content that matches their interests.
-Each genre displays a curated list of relevant titles.
-Watchlist Feature:
-
-Users can create a watchlist to keep track of movies they intend to watch in the future.
-Technologies Used:
-
-React.js: For building the user interface with reusable components.
-TMDM API: To fetch real-time movie data and details.
-CSS/Styled Components: For styling and responsive design.
-Conclusion: The Netflix Clone project showcases the ability to create a modern web application that replicates the core functionalities of a popular streaming service. By leveraging React.js and the TMDM API, this project provides users with an engaging and intuitive platform to discover and enjoy a vast array of movies and TV shows.`,
+    description: `React application mimicking Netflix UI, with movie browsing, search, and favorites built using the TMDB API.`,
     url: 'https://github.com/muhammedshebinva/Netflix-sample-using-React',
     image: porfolioImage3,
   },
   {
     title: 'College Web Page Management System',
-    description: `Overview: The College Web Page Management System is a web application developed using Node.js, Express, MongoDB, and Handlebars. This platform serves as a centralized hub for managing college courses, previous year question papers, and student access. Admins can easily upload and manage course materials, while students can log in to download resources in PDF format.
-
-Features:
-
-Admin Dashboard:
-
-A user-friendly dashboard where admins can manage courses, upload previous year question papers, and oversee student accounts.
-Admins can add, edit, or delete course information and associated documents.
-Course Management:
-
-Admins can create and categorize courses, providing details such as course name, description, and academic year.
-Each course can have multiple previous year question papers uploaded for student access.
-Student Registration & Login:
-
-Students can register for an account and securely log in to access course materials.
-User-friendly authentication process to ensure secure access.
-Downloadable Resources:
-
-Students can browse through available courses and download previous year question papers in PDF format.
-Search functionality to quickly locate specific courses or documents.
-User Profiles:
-
-Each student has a profile page that displays their registered courses and download history.
-Option for students to update their profile information as needed.
-Responsive Design:
-
-The web application is designed to be responsive, ensuring a seamless experience on both desktop and mobile devices.
-Notifications:
-
-Admins can send notifications to students regarding new uploads or important announcements related to courses.
-Security Features:
-
-Implementing secure password storage and session management to protect user data.
-Technologies Used:
-
-Node.js: For server-side logic and handling requests.
-Express: For building a robust RESTful API.
-MongoDB: For storing course details, question papers, and user information.
-Handlebars: For rendering dynamic web pages with a clean and simple template syntax.`,
+    description: `Node.js, Express, MongoDB, and Handlebars-based platform for uploading and downloading college question papers and coursework resources.`,
     url: 'https://github.com/muhammedshebinva/College_Previous-Year-Question-Papers-PDF-Download---Website',
     image: porfolioImage4,
   },
   {
     title: 'OLX Clone',
-    description: `Project Description: OLX Clone
-Overview: The OLX Clone is a web application developed using React.js and Google Firebase, designed to replicate the functionality of the popular online marketplace OLX. This platform allows users to buy and sell various products, offering a user-friendly interface for listing items, browsing available products, and connecting with potential buyers or sellers.
-
-Features:
-
-User Authentication:
-
-Users can sign up and log in using their email or social media accounts (Firebase Authentication).
-Secure user management ensures that profiles and listings are protected.
-Product Listing:
-
-Users can create and publish product listings with detailed descriptions, images, and pricing.
-An intuitive form allows users to easily input product details and upload photos.
-Browse and Search:
-
-A dynamic homepage displays featured listings and categories for easy navigation.
-Search functionality enables users to quickly find specific products by keywords, categories, or location.
-Category Filters:
-
-Users can filter listings by category (e.g., electronics, furniture, vehicles) to find relevant items.
-Sorting options (e.g., price, newest listings) enhance the browsing experience.
-Real-time Database:
-
-Google Firebase Firestore is used for storing and retrieving product listings, ensuring real-time updates and synchronization across all users.
-Changes to listings are instantly reflected in the app.
-User Profiles:
-
-Each user has a profile page showcasing their active listings and transaction history.
-Users can edit their profiles and manage their listings directly from their account.
-Messaging System:
-
-A built-in chat feature allows buyers and sellers to communicate directly within the app, facilitating negotiations and inquiries.
-Notifications alert users to new messages.
-Responsive Design:
-
-The application is designed to be fully responsive, providing an optimal experience on desktops, tablets, and mobile devices.
-Admin Panel:
-
-An admin dashboard for monitoring user activity, managing listings, and addressing any reported issues.
-Favorites:
-
-Users can save their favorite listings for quick access later, enhancing the shopping experience.
-Technologies Used:
-
-React.js: For building a dynamic and interactive user interface.
-Firebase: For user authentication, real-time database management, and hosting.
-CSS/Styled Components: For styling and creating a responsive layout.
-Conclusion: The OLX Clone project demonstrates the ability to create a fully functional online marketplace using modern web technologies. By leveraging React.js and Google Firebase, this platform offers users a seamless experience for buying and selling products, complete with essential features that enhance user interaction and engagement.`,
+    description: `Marketplace app built in React and Firebase for buying and selling goods with authentication and real-time listing flows.`,
     url: 'https://github.com/muhammedshebinva/React_tutorial_olx_clone',
     image: porfolioImage5,
   },
 ];
 
 /**
- * Resume section -- TODO: Standardize resume contact format or offer MDX
+ * Education section
  */
 export const education: TimelineItem[] = [
   {
-    date: '',
-    location: 'Bharathiar University',
-    title: 'BSc Computer Science (8.6 CGPA)',
+    date: 'Jan 2024 - Mar 2026',
+    location: 'University of Mysore, Karnataka, India',
+    title: 'Master of Computer Applications (MCA) – Online',
     content: (
       <p>
-        Learned foundational concepts in programming, algorithms, data structures, and software development
-        methodologies. Courses in operating systems, databases, and web development were particularly impactful,
-        providing a solid technical base. I also gained experience with version control systems like Git, which has been
-        essential in my current role as a software engineer. Learning about Agile methodologies helped me understand
-        project management and iterative development processes.
+        Advanced study in software engineering, AI, ML, and modern application development while continuing full-time enterprise work.
       </p>
     ),
   },
   {
-    date: '',
-    location: 'University of Mysore',
-    title: 'MCA (9 CGPA)',
+    date: 'Jun 2019 - Jul 2022',
+    location: 'Bharathiar University, Tamil Nadu, India',
+    title: 'Bachelor of Science in Computer Science',
     content: (
       <p>
-        Through my Master of Computer Applications (MCA), I have built a robust foundation in advanced technical
-        disciplines and professional leadership. My academic journey focused on mastering Data Structures and Algorithms
-        (DSA), Java, and Python, alongside specialized coursework in Cloud Computing, Artificial Intelligence, and Linux
-        Programming. By combining deep dives into Advanced Software Engineering and Database Management with dedicated
-        training in Professional Management and Communication, I have developed the expertise to architect scalable
-        technical solutions and lead complex projects within high-performance engineering environments.{' '}
-      </p>
-    ),
-  },
-  {
-    date: '',
-    location: 'Kerala',
-    title: 'Higher Secondary (7.8 CGPA)',
-    content: (
-      <p>
-        My time in school equipped me with critical thinking skills, a problem-solving mindset, and technical
-        proficiency that I apply daily in my work. I'm continually building on this foundation
+        Built a strong foundation in programming, algorithms, data structures, and software development principles.
       </p>
     ),
   },
 ];
 
+/**
+ * Experience section
+ */
 export const experience: TimelineItem[] = [
   {
-    date: 'Oct 2022 - Present',
-    location: 'Infosys Limited, Bangalore India',
-    title: 'Senior Systems Associate ',
+    date: 'October 2022 – Present',
+    location: 'Infosys Limited | Bengaluru, India',
+    title: 'Senior Systems Associate',
     content: (
-      <p>
-        Senior Systems Associate with over 3.5 years of experience in architecting scalable web applications and
-        monitoring dashboards.In current project I am focused on the intersection of ITSM(ServiceNow) and Agentic AI (Python, Azure Open Ai, RAG, MCP, Langraph), building
-        FastAPI-based MCP servers and LangGraph agents to automate complex enterprise workflows within the Infosys Topaz
-        and ServiceNow ecosystems. From developing full-stack features for the LEX Learning Platform to designing
-        real-time monitoring dashboards for global infrastructure health, I thrive on building tools that reduce manual
-        overhead and improve technical productivity. Core Tech: React.js, Node.js, Python, LangGraph, Azure OpenAI, and
-        ServiceNow/SolarWinds API Integration
-      </p>
+      <>
+        <p className="mb-4">
+          AI Engineer and Full-Stack Developer with 4 years at Infosys, architecting production Agentic AI systems for enterprise IT operations and security. Expertise spans multi-agent workflows, governed AI policy layers, RAG pipelines, and full-stack dashboards for operational intelligence.
+        </p>
+        <ul className="list-disc list-inside mb-4">
+          <li>Current initiative: architecting FVM (REMORA), a multi-tenant AI-assisted vulnerability remediation orchestration platform unifying vulnerability scanners, CMDB, EDR, and ticketing tools into one governed workflow.</li>
+          <li>Designed a deterministic policy engine evaluating remediation actions against risk, ownership, SLA, and blast-radius rules before execution, with a fail-closed Azure OpenAI gateway used only for read-only investigation and reporting.</li>
+          <li>Built stateful multi-agent workflows with LangGraph and Azure OpenAI GPT-4o for context-aware classification, risk analysis, and intelligent routing of unstructured ITSM ticket data.</li>
+          <li>Led the development of Cognitive Analyzer, an AI ticket-analytics platform deployed across 20+ global enterprise accounts, delivering measured incident-ticket reductions of 11–49% and service-request reductions of 8–62%.</li>
+          <li>Improving Cognitive Analyzer’s categorization pipeline with ONNX Runtime and DuckDB embedding caching to speed large-volume ticket batch processing.</li>
+          <li>Developed RAG and semantic-search pipelines using embeddings and vector databases (DuckDB VSS) to power an on-premise, RAG-grounded chatbot for natural-language analysis.</li>
+          <li>Engineered secure Python REST APIs with JWT/RBAC and MCP integrations connecting ServiceNow, Jira, and SolarWinds.</li>
+          <li>Built React/TypeScript dashboards with interactive analytics, reducing executive reporting turnaround from days to seconds.</li>
+          <li>Containerized applications with Docker and hosted services on non-production VMs with IIS and Apache httpd, running backend services as Windows services with NSSM.</li>
+          <li>Used Claude Code and GitHub Copilot to accelerate code generation, refactoring, debugging, and test writing across Python and React codebases.</li>
+        </ul>
+        <p>
+          Core Tech: Python, FastAPI, Flask, LangGraph, LangChain, Azure OpenAI GPT-4o, MCP, React.js, TypeScript, PostgreSQL, DuckDB, ServiceNow API, Docker.
+        </p>
+      </>
     ),
   },
-  // {
-  //   date: 'March 2007 - February 2010',
-  //   location: 'Garage Startup Studio',
-  //   title: 'Junior bug fixer',
-  //   content: (
-  //     <p>
-  //       Describe work, special projects, notable achievements, what technologies you have been working with, and
-  //       anything else that would be useful for an employer to know.
-  //     </p>
-  //   ),
-  // },
 ];
 
 /**
@@ -520,7 +409,7 @@ export const testimonial: TestimonialSection = {
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
   description:
-    'I’m currently seeking new job opportunities. If you’re interested in collaborating or have any potential openings, feel free to reach out!',
+    'I’m currently open to new opportunities and would be glad to connect for AI, automation, and software engineering roles.',
   items: [
     {
       type: ContactType.Email,
@@ -528,9 +417,14 @@ export const contact: ContactSection = {
       href: 'mailto:muhammedshebinva@gmail.com',
     },
     {
+      type: ContactType.Phone,
+      text: '+91 9961335345',
+      href: 'tel:+919961335345',
+    },
+    {
       type: ContactType.Location,
-      text: 'Bangalore, India',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Bengaluru, India (Open to relocation)',
+      href: '#',
     },
     {
       type: ContactType.Github,
@@ -539,8 +433,8 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.LinkedIn,
-      text: 'muhammedshebinva',
-      href: 'https://www.linkedin.com/in/muhammed-shebin-v-a-06978b213?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      text: 'muhammed-shebin-v-a-06978b213',
+      href: 'https://www.linkedin.com/in/muhammed-shebin-v-a-06978b213/',
     },
   ],
 };
@@ -554,7 +448,7 @@ export const socialLinks: Social[] = [
   {
     label: 'LinkedIn',
     Icon: LinkedInIcon,
-    href: 'https://www.linkedin.com/in/muhammed-shebin-v-a-06978b213?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    href: 'https://www.linkedin.com/in/muhammed-shebin-v-a-06978b213/',
   },
   {label: 'Twitter', Icon: TwitterIcon, href: 'https://x.com/shebin_vs'},
 ];
